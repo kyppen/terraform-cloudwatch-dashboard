@@ -51,7 +51,7 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        run: terraform plan   -var="prefix=$PREFIX" -var="image=$IMAGE"  -no-color
+        run: terraform plan -var="prefix=$PREFIX" -var="image=$IMAGE" -var="sofa006" -no-color
         continue-on-error: true
         working-directory: infra 
 
