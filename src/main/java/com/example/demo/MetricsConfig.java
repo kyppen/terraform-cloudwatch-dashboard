@@ -37,7 +37,7 @@ public class MetricsConfig {
             private Map<String, String> configuration = Map.of(
                     "cloudwatch.namespace", "sofa006",
                     "cloudwatch.step", Duration.ofSeconds(5).toString());
-
+            
             @Override
             public String get(String key) {
                 return configuration.get(key);
