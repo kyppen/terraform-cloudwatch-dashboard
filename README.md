@@ -6,7 +6,7 @@ This exercise utilizes Java, Spring Boot, and a metrics framework called Microme
 We will also explore how to visualize metrics in AWS CloudWatch and how to use Terraform to create a dashboard.
 
 # Prepare your Cloud 9 environment
-
+s
 Log in to your Cloud 9 environment as usual
 
 *Important. When you use both Java- and Terraform in the same lab, you might run out of disk space on your Cloud 9 instance.* It is recomended to go through the instructions 
