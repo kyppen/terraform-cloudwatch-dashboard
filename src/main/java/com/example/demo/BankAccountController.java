@@ -95,18 +95,10 @@ public class BankAccountController implements ApplicationListener<ApplicationRea
      *
      * @param applicationReadyEvent
      */
-     
     @Override
     public void onApplicationEvent(ApplicationReadyEvent applicationReadyEvent) {
         Gauge.builder("account_count", theBank,
                 b -> b.values().size()).register(meterRegistry);
-        Gauge.builder("bank_sum", theBank,
-                b -> b.values()
-                        .stream()
-                        .map(Account::getBalance)
-                        .mapToDouble(BigDecimal::doubleValue)
-                        .sum())
-        .register(meterRegistry);
     }
 
     @ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "account not found")
