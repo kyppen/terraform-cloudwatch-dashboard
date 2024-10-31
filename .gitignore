@@ -1,0 +1,66 @@
+# Cloud9 specific
+.c9/
+*.log
+
+# Java specific
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# Spring Boot specific
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+!src/main/resources/static/**/       # Allow static content
+!src/main/resources/templates/**/    # Allow template files
+!src/main/resources/application.yml   # Include main config file
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Eclipse
+*.metadata
+*.classpath
+*.project
+*.settings/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Intellij
+.idea/
+*.iws
+*.ipr
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Terraform specific
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
